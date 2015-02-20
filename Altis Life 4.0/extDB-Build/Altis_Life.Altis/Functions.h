@@ -345,4 +345,13 @@ class Life_Client_Core
 		class gangDeposit {};
 		class wireTransfer {};
 	};
+	
+	class economy
+	{
+		file = "core\economy";
+		class virt_updatePrice {};
+		class addsubstract {};
+		class openEconomy {};
+		class virt_updateEconomy {};
+	};
 };
