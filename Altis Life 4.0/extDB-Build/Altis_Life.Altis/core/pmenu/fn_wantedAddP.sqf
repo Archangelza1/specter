@@ -1,6 +1,6 @@
 private["_unit","_amount"];
 if(playerSide != west) exitWith {hint "Who do you think you are?"};
-if((lbCurSel 2406) == -1) exitWith {hint "You must select a perp."};
+if((lbCurSel 2406) == -1) exitWith {hint "You must select a player."};
 if((lbCurSel 2407) == -1) exitWith {hint "You must select a crime."};
 _unit = lbData [2406,lbCurSel 2406];
 _unit = call compile format["%1",_unit];
