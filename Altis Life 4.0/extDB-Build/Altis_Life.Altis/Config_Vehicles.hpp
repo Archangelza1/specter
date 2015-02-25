@@ -13,7 +13,8 @@ class CarShops {
 			{ "C_Offroad_01_F", 12500, "driver" },
 			{ "C_SUV_01_F", 30000, "driver" },
 			{ "C_Hatchback_01_sport_F", 40000, "driver" },
-			{ "C_Van_01_transport_F", 45000, "driver" }
+			{ "C_Van_01_transport_F", 45000, "driver" },
+			{ "Jonzie_Viper", 50000, "driver", { "life_donatorlvl", 3 } }
 		};
 	};
 
@@ -75,6 +76,7 @@ class CarShops {
 		vehicles[] = {
 			{ "C_Offroad_01_F", 5000, ""},
 			{ "C_SUV_01_F", 20000, "" },
+			{ "C_Hatchback_01_sport_F", 40000, "", { "life_coplevel", 4 } },
 			{ "B_MRAP_01_F", 30000, "", { "life_coplevel", 3 } }
 		};
 	};
@@ -96,7 +98,7 @@ class CarShops {
 	};
 
 	class cop_airhq {
-		side = "civ";
+		side = "cop";
 		vehicles[] = {
 			{ "B_Heli_Light_01_F", 75000, "cAir" },
 			{ "B_Heli_Transport_01_F", 200000, "cAir", { "life_coplevel", 3 } },
@@ -426,6 +428,9 @@ class CfgVehicles {
 			{ "Green", "civ", {
 	                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
             } },
+			{ "shit", "civ", {
+					"textures\cars\hatchsport\lads2.paa"
+			} },
             { "Police", "cop", {
                 "#(ai,64,64,1)Fresnel(1.3,7)"
             } }
@@ -606,6 +611,18 @@ class CfgVehicles {
             } }
         };
     };
+	
+	//Added Cars
+
+	class Jonzie_Viper {
+		vItemSpace = 65;
+		storageFee[] = { 1000, 1000, 0, 0 };
+		garageSell[] = { 1000, 1000, 0, 0 };
+		insurance = 2500;
+        chopShop = 5000;
+		textures[] = {};
+	};
+			
 
 	class B_Heli_Light_01_F {
         vItemSpace = 90;

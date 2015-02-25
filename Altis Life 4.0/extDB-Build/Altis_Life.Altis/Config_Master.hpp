@@ -26,7 +26,7 @@
 */
 class Life_Settings {
 	/* Persistent Settings */
-	save_civ_weapons = false; //Allow civilians to save weapons on them?
+	save_civ_weapons = true; //Allow civilians to save weapons on them?
 	save_virtualItems = true; //Save Virtual items (all sides)?
 
 	/* Revive system settings */
@@ -42,9 +42,8 @@ class Life_Settings {
 	gang_upgradeMultiplier = 2.5; //Not sure if in use?
 
 	/* Player-related systems */
-	enable_fatigue = false; //Set to false to disable the ARMA 3 false system.
-	total_maxWeight = 24; //Identifies the max carrying weight (gets adjusted throughout game when wearing different types of clothing).
-	total_maxWeightT = 24;  //Static variable for the maximum weight allowed without having a backpack
+	enable_fatigue = true; //Set to false to disable the ARMA 3 false system.
+	total_maxWeight = 24; //Static variable for the maximum weight allowed without having a backpack
 	paycheck_period = 5; //Scaled in minutes
 	
 	/* Impound Variables */
@@ -219,6 +218,7 @@ class Licenses {
 	LICENSEMACRO(cement,"STR_License_Cement","cement",6500,false,"civ")
 	LICENSEMACRO(mAir,"STR_License_Pilot","mAir",15000,false,"med")
 	LICENSEMACRO(home,"STR_License_Home","home",75000,false,"civ")
+	LICENSEMACRO(donate,"STR_Licence_Donate","Donate",0,false,"civ")
 };
 
 class VirtualShops {

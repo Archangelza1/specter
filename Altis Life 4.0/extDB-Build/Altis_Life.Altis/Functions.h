@@ -25,6 +25,8 @@ class Life_Client_Core
 		class initCiv {};
 		class initCop {};
 		class initMedic {};
+		class initbounty {};
+		class welcomeNotification {};
 		class survival {};
 	};
 	
@@ -36,6 +38,14 @@ class Life_Client_Core
 		class admingetID {};
 		class adminMenu {};
 		class adminQuery {};
+		class adminSpectate {};
+		class adminTeleport {};
+		class adminTpHere {};
+		class adminDebugCon {};
+		class adminCompensate {};
+		class adminGodMode {};
+		class adminFreeze {};
+		class adminMarkers {};
 	};
 	
 	class Medical_System
@@ -54,6 +64,7 @@ class Life_Client_Core
 		class medicSirenLights {};
 		class medicLights {};
 		class medicSiren {};
+		class medicSiren2 {};
 	};
 	
 	class Actions
@@ -90,7 +101,6 @@ class Life_Client_Core
 		class captureHideout {};
 		class gather {};
 		class gutAnimal {};
-		class surrender {};
 	};
 	
 	class Housing
@@ -189,6 +199,9 @@ class Life_Client_Core
 		class loadGear {};
 		class stripDownPlayer {};
 		class nearATM {};
+		class UnLockCarSound {};
+		class LockCarSound {};
+		class fadeSound {};
 	};
 	
 	class Network
@@ -218,6 +231,7 @@ class Life_Client_Core
 		class removeLicenses {};
 		class demoChargeTimer {};
 		class civLoadout {};
+		class freezePlayer {};
 	};
 	
 	class Vehicle
@@ -263,6 +277,7 @@ class Life_Client_Core
 		class copLoadout {};
 		class ticketPaid {};
 		class wantedGrab {};
+		class copOpener {};
 	};
 	
 	class Gangs
@@ -344,5 +359,24 @@ class Life_Client_Core
 		class vehicleGarage {};
 		class gangDeposit {};
 		class wireTransfer {};
+	};
+	
+	//indicators
+	
+	class RageWorld_blinker
+	{
+		file = "custom\indicators";
+		class BlinkerInit {};
+		class BlinkerLinks {};
+		class BlinkerRechts {};
+		class WarnBlinker {};
+	};
+	
+	//bounty
+	
+	class bounty
+	{
+		file = "core\bounty";
+		class bountyLoadout {};
 	};
 };
